@@ -226,7 +226,7 @@ PumpFun AI Dev Sniper ships as the **full source code** with a lifetime license.
 
 ### Quick Start
 1. **Pick your tier** and pay at [memesnipe.fun](https://memesnipe.fun) — 9 SOL (Core) or 15 SOL (Full Suite)
-2. Message **[@Tokenlab_pw](https://t.me/Tokenlab_pw)** on Telegram with your order ID
+2. Message **[@nik0dev](https://t.me/nik0dev)** on Telegram with your order ID
 3. Receive your private GitHub invite (or the source files directly)
 4. Self-host your instance, configure wallets and presets, and start sniping
 
@@ -258,7 +258,7 @@ Yes. Both tiers include the complete source under a commercial lifetime license.
 Core (9 SOL) is the complete sniping engine — Jito bundles, auto take-profit, WebSocket monitoring, volume bot, and the Axiom overlay. Full Suite (15 SOL) adds Twitter parsing, top-dev tracking, the AI deving autopilot, the Token Creator, and priority support.
 
 **Can I upgrade later?**
-Yes — pay the 6 SOL difference and message [@Tokenlab_pw](https://t.me/Tokenlab_pw) with your order ID to unlock the Full Suite.
+Yes — pay the 6 SOL difference and message [@nik0dev](https://t.me/nik0dev) with your order ID to unlock the Full Suite.
 
 **What chains are supported?**
 Solana only, specifically optimized for pump.fun token launches.
