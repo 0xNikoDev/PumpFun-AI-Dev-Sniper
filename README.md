@@ -221,18 +221,6 @@ type wsHub struct {
 
 ---
 
-## Performance
-
-| Metric | Value |
-|--------|-------|
-| Snipe latency (RPC) | ~150ms |
-| Snipe latency (Jito bundle) | ~200ms |
-| WebSocket event processing | <10ms |
-| Concurrent wallets | Up to 20 |
-| Uptime (production) | 99.9% |
-
----
-
 ## Getting Started
 
 PumpFun AI Dev Sniper ships as the **full source code** with a lifetime license.
