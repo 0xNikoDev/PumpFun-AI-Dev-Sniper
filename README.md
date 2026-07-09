@@ -93,6 +93,19 @@ Two one-time licenses. Pay once in **SOL**, own the source forever — no subscr
 
 ---
 
+## AI Deving & Auto-Sell in Action
+
+<div align="center">
+
+| 🤖 AI Deving Autopilot | 📈 Monitor & Auto-Sell |
+|:---:|:---:|
+| ![AI Deving](assets/auto.gif) | ![Monitor](assets/monitor.gif) |
+| Twitter signals & top-dev deploys fire the autopilot from your presets | Real-time position monitoring with ladder take-profit / stop-loss |
+
+</div>
+
+---
+
 ## Perfect Side-by-Side
 
 Our deeply optimized compact design is built to snap cleanly alongside your favorite analytics platform.
