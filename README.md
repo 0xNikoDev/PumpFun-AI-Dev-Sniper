@@ -1,8 +1,8 @@
 <div align="center">
 
-# ⚡ PumpFun Sniper Bot
+# ⚡ PumpFun AI Dev Sniper
 
-**The fastest Solana pump.fun sniper — multi-wallet Jito bundles, sub-200ms execution, and Twitter-driven AI deving.**
+**AI deving autopilot for pump.fun on Solana — Twitter-driven auto-deploys, top-dev mirroring, and sub-200ms multi-wallet Jito sniping.**
 
 [![Solana](https://img.shields.io/badge/Solana-9945FF?style=for-the-badge&logo=solana&logoColor=white)](https://solana.com)
 [![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)](https://go.dev)
@@ -17,9 +17,9 @@
 
 ---
 
-## What is PumpFun Sniper Bot?
+## What is PumpFun AI Dev Sniper?
 
-A high-performance Go trading bot built for [pump.fun](https://pump.fun) on Solana. Snipe new token launches across multiple wallets simultaneously, execute MEV-protected bundle transactions via Jito, react to breaking narratives with real-time Twitter parsing, and let the AI deving autopilot deploy from your presets — all through a clean REST API.
+A high-performance Go trading bot built for [pump.fun](https://pump.fun) on Solana. Let the AI deving autopilot deploy from your presets the moment a narrative breaks, mirror your favorite top devs automatically, react to real-time Twitter signals, and snipe new launches across multiple wallets with MEV-protected Jito bundles — all through a clean REST API.
 
 Built for traders who need sub-second execution on memecoin launches, shipped as the **full source code** with a lifetime license.
 
@@ -222,7 +222,7 @@ type wsHub struct {
 
 ## Getting Started
 
-PumpFun Sniper Bot ships as the **full source code** with a lifetime license.
+PumpFun AI Dev Sniper ships as the **full source code** with a lifetime license.
 
 ### Quick Start
 1. **Pick your tier** and pay at [memesnipe.fun](https://memesnipe.fun) — 9 SOL (Core) or 15 SOL (Full Suite)

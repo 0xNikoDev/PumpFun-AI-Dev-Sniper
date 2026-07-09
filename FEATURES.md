@@ -1,4 +1,4 @@
-# Features — PumpFun Sniper Bot
+# Features — PumpFun AI Dev Sniper
 
 Full API reference with request/response examples for all endpoints.
 
@@ -301,7 +301,7 @@ curl -X POST http://localhost:8080/api/token/create \
   -d '{
     "name": "My Token",
     "symbol": "MYTKN",
-    "description": "Launched with PumpFun Sniper Bot",
+    "description": "Launched with PumpFun AI Dev Sniper",
     "imageUrl": "https://.../logo.png",
     "devBuySOL": 0.5
   }'
