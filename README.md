@@ -1,14 +1,17 @@
 <div align="center">
 
-# PumpFun Sniper Bot
+# ⚡ PumpFun Sniper Bot
 
-**The fastest Solana pump.fun sniper bot with multi-wallet sniping, Jito MEV bundles, and automated volume strategies**
+**The fastest Solana pump.fun sniper — multi-wallet Jito bundles, sub-200ms execution, and Twitter-driven AI deving.**
 
 [![Solana](https://img.shields.io/badge/Solana-9945FF?style=for-the-badge&logo=solana&logoColor=white)](https://solana.com)
 [![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)](https://go.dev)
 [![License](https://img.shields.io/badge/License-Commercial-red?style=for-the-badge)]()
 
-[Get Access](https://memesnipe.fun) · [Features](#features) · [Demo](#demo) · [Architecture](#architecture)
+[![Core](https://img.shields.io/badge/Core-9_SOL-58C88D?style=for-the-badge&logo=solana&logoColor=white)](https://memesnipe.fun)
+[![Full Suite](https://img.shields.io/badge/Full_Suite-15_SOL-9945FF?style=for-the-badge&logo=solana&logoColor=white)](https://memesnipe.fun)
+
+[Get Access](https://memesnipe.fun) · [Pricing](#pricing) · [Features](#features) · [Demo](#demo) · [Architecture](#architecture)
 
 </div>
 
@@ -16,20 +19,62 @@
 
 ## What is PumpFun Sniper Bot?
 
-A high-performance Go trading bot built for [pump.fun](https://pump.fun) on Solana. Snipe new token launches across multiple wallets simultaneously, execute MEV-protected bundle transactions via Jito, and run automated volume strategies — all through a clean REST API.
+A high-performance Go trading bot built for [pump.fun](https://pump.fun) on Solana. Snipe new token launches across multiple wallets simultaneously, execute MEV-protected bundle transactions via Jito, react to breaking narratives with real-time Twitter parsing, and let the AI deving autopilot deploy from your presets — all through a clean REST API.
 
-Built for traders who need sub-second execution on memecoin launches.
+Built for traders who need sub-second execution on memecoin launches, shipped as the **full source code** with a lifetime license.
+
+---
+
+## Pricing
+
+Two one-time licenses. Pay once in **SOL**, own the source forever — no subscriptions, no rebilling.
+
+| | **Core** · 9 SOL | **Full Suite** · 15 SOL |
+|---|:---:|:---:|
+| Full source code + lifetime license | ✅ | ✅ |
+| Multi-wallet coordinated sniping | ✅ | ✅ |
+| Jito MEV bundle protection | ✅ | ✅ |
+| Auto take-profit / stop-loss | ✅ | ✅ |
+| Real-time WebSocket monitoring | ✅ | ✅ |
+| Bonding-curve trading engine | ✅ | ✅ |
+| Volume bot strategies | ✅ | ✅ |
+| "Eyes on Axiom" overlay | ✅ | ✅ |
+| **Twitter / X real-time parsing** | — | ✅ |
+| **Top-dev tracking & mirroring** | — | ✅ |
+| **AI Deving autopilot** | — | ✅ |
+| **pump.fun Token Creator** | — | ✅ |
+| Support | Standard | Priority |
+
+<div align="center">
+
+[![Buy Core — 9 SOL](https://img.shields.io/badge/Buy_Core-9_SOL-58C88D?style=for-the-badge&logo=solana&logoColor=white)](https://memesnipe.fun)
+&nbsp;
+[![Buy Full Suite — 15 SOL](https://img.shields.io/badge/Buy_Full_Suite-15_SOL-9945FF?style=for-the-badge&logo=solana&logoColor=white)](https://memesnipe.fun)
+
+**Pay with 300+ cryptocurrencies · Instant delivery · 24/7 support on Telegram**
+
+</div>
 
 ---
 
 ## Features
+
+**In every tier (Core + Full Suite):**
 
 - **Multi-Wallet Coordinated Sniping** — Atomic launches with parallel RPC buys across wallets. Fastest entry on new pump.fun tokens.
 - **Jito MEV Bundle Protection** — Batch transactions through Jito's private mempool. Zero front-running, minimal slippage.
 - **Real-Time WebSocket Monitoring** — Live transaction streaming with automated take-profit and stop-loss triggers.
 - **Bonding Curve Trading** — Fast on-chain price calculations without RPC lookups. Deterministic, low-latency execution.
 - **Volume Bot Strategies** — Automated buy/sell cycles across wallets to generate organic-looking volume on pump.fun tokens.
+- **"Eyes on Axiom" Overlay** — Compact side-by-side layout with real-time wallet/token visibility and one-click CA copy.
 - **REST API Control** — Full HTTP API for programmatic control. Integrate with your own dashboard or scripts.
+
+**Full Suite only (15 SOL):**
+
+- **Twitter / X Parsing** — Live feed parsing surfaces the relevant tweet the instant news breaks — never miss the narrative.
+- **Top-Dev Tracking** — Follow and mirror your favorite creators automatically the moment they deploy.
+- **AI Deving Autopilot** — Semi-manual signals or fully automatic deploys driven by Twitter signals and top devs.
+- **pump.fun Token Creator** — Create and launch tokens with full metadata in seconds.
 
 > See [FEATURES.md](FEATURES.md) for detailed breakdown with API examples.
 
@@ -73,6 +118,12 @@ graph TB
         ML[Monitor Loop]
     end
 
+    subgraph "Signals — Full Suite"
+        TW[Twitter Parser]
+        AI[AI Deving Autopilot]
+        DEV[Top-Dev Tracker]
+    end
+
     subgraph "Solana Layer"
         RPC[RPC Nodes]
         JITO[Jito Block Engine]
@@ -88,6 +139,9 @@ graph TB
     ML --> YS
     YS -->|New Txs| ML
     ML -->|Take Profit| SM
+    TW --> AI
+    DEV --> AI
+    AI -->|Auto Deploy| SM
 ```
 
 ---
@@ -98,8 +152,9 @@ graph TB
 1. Monitor    → Yellowstone gRPC streams all pump.fun transactions in real-time
 2. Detect     → New token launch detected, bonding curve parsed
 3. Evaluate   → Market cap, liquidity, creator history checked in <50ms
-4. Execute    → Multi-wallet snipe via Jito bundle OR parallel RPC
-5. Manage     → Auto take-profit/stop-loss via WebSocket monitoring
+4. Signal     → (Full Suite) Twitter + top-dev signals feed the AI deving autopilot
+5. Execute    → Multi-wallet snipe via Jito bundle OR parallel RPC
+6. Manage     → Auto take-profit/stop-loss via WebSocket monitoring
 ```
 
 ---
@@ -167,26 +222,28 @@ type wsHub struct {
 
 ## Getting Started
 
-PumpFun Sniper Bot is available as a **compiled binary** with beta access licensing.
+PumpFun Sniper Bot ships as the **full source code** with a lifetime license.
 
 ### Quick Start
-1. **Purchase beta access** at [memesnipe.fun](https://memesnipe.fun)
-2. Receive your license key via email
-3. Open [app.memesnipe.fun](https://app.memesnipe.fun) — no setup, no binary, fully online
-4. Enter your key and start sniping
+1. **Pick your tier** and pay at [memesnipe.fun](https://memesnipe.fun) — 9 SOL (Core) or 15 SOL (Full Suite)
+2. Message **[@Tokenlab_pw](https://t.me/Tokenlab_pw)** on Telegram with your order ID
+3. Receive your private GitHub invite (or the source files directly)
+4. Self-host your instance, configure wallets and presets, and start sniping
 
 ---
 
 ## API Endpoints
 
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| POST | `/api/snipe/fire` | Execute multi-wallet snipe |
-| POST | `/api/snipe/bundle-fire` | Execute Jito bundle snipe |
-| POST | `/api/volume/start` | Start volume bot cycle |
-| POST | `/api/sell/bundle` | Bundle sell across wallets |
-| GET  | `/api/monitor/ws` | WebSocket monitoring stream |
-| GET  | `/api/token/:id` | Token bonding curve data |
+| Method | Endpoint | Description | Tier |
+|--------|----------|-------------|------|
+| POST | `/api/snipe/fire` | Execute multi-wallet snipe | Core |
+| POST | `/api/snipe/bundle-fire` | Execute Jito bundle snipe | Core |
+| POST | `/api/volume/start` | Start volume bot cycle | Core |
+| POST | `/api/sell/bundle` | Bundle sell across wallets | Core |
+| GET  | `/api/monitor/ws` | WebSocket monitoring stream | Core |
+| GET  | `/api/token/:id` | Token bonding curve data | Core |
+| POST | `/api/deving/arm` | Arm the AI deving autopilot | Full Suite |
+| POST | `/api/token/create` | Launch a pump.fun token | Full Suite |
 
 > Full API reference with curl examples in [FEATURES.md](FEATURES.md)
 
@@ -194,17 +251,20 @@ PumpFun Sniper Bot is available as a **compiled binary** with beta access licens
 
 ## FAQ
 
-**Is this open source?**
-No. The bot is distributed as a compiled binary with a commercial license. This repo contains documentation, architecture details, and code previews.
+**Do I get the source code?**
+Yes. Both tiers include the complete source under a commercial lifetime license. This public repo holds documentation, architecture, and code previews; purchasing grants access to the private source repository.
+
+**What's the difference between Core and Full Suite?**
+Core (9 SOL) is the complete sniping engine — Jito bundles, auto take-profit, WebSocket monitoring, volume bot, and the Axiom overlay. Full Suite (15 SOL) adds Twitter parsing, top-dev tracking, the AI deving autopilot, the Token Creator, and priority support.
+
+**Can I upgrade later?**
+Yes — pay the 6 SOL difference and message [@Tokenlab_pw](https://t.me/Tokenlab_pw) with your order ID to unlock the Full Suite.
 
 **What chains are supported?**
 Solana only, specifically optimized for pump.fun token launches.
 
 **How fast is the sniper?**
 Sub-200ms from token detection to buy execution with Jito bundles. Under 150ms with direct RPC.
-
-**Can I run multiple instances?**
-One license per server. Contact us for team pricing.
 
 ---
 
@@ -214,9 +274,11 @@ One license per server. Contact us for team pricing.
 
 ### Ready to snipe pump.fun launches?
 
-[![Get Beta Access](https://img.shields.io/badge/Get_Beta_Access-$500/month-58C88D?style=for-the-badge&logo=solana&logoColor=white)](https://memesnipe.fun)
+[![Buy Core — 9 SOL](https://img.shields.io/badge/Buy_Core-9_SOL-58C88D?style=for-the-badge&logo=solana&logoColor=white)](https://memesnipe.fun)
+&nbsp;
+[![Buy Full Suite — 15 SOL](https://img.shields.io/badge/Buy_Full_Suite-15_SOL-9945FF?style=for-the-badge&logo=solana&logoColor=white)](https://memesnipe.fun)
 
-**Pay with 300+ cryptocurrencies · Instant delivery · 24/7 support on Discord**
+**Pay with 300+ cryptocurrencies · Instant delivery · 24/7 support on Telegram**
 
 </div>
 

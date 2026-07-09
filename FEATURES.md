@@ -5,6 +5,19 @@ Full API reference with request/response examples for all endpoints.
 > All endpoints require `Authorization: Bearer <your-license-key>` header.
 > Base URL: `http://your-server:8080`
 
+**Tier legend:** 🟢 **Core** (9 SOL) · 🟣 **Full Suite** (15 SOL, includes everything in Core)
+
+| # | Feature | Tier |
+|---|---------|------|
+| 1 | Multi-Wallet Sniping | 🟢 Core |
+| 2 | Jito MEV Bundle Protection | 🟢 Core |
+| 3 | Volume Bot | 🟢 Core |
+| 4 | WebSocket Monitoring | 🟢 Core |
+| 5 | Token Analysis | 🟢 Core |
+| 6 | Bundle Sell | 🟢 Core |
+| 7 | AI Deving Autopilot | 🟣 Full Suite |
+| 8 | Token Creator | 🟣 Full Suite |
+
 ---
 
 ## 1. Multi-Wallet Sniping
@@ -233,6 +246,85 @@ curl -X POST http://localhost:8080/api/sell/bundle \
 | `wallets` | []string | Wallets holding tokens to sell |
 | `sellPercent` | float64 | % of each wallet's token balance to sell |
 | `jitoTipSOL` | float64 | Jito validator tip in SOL |
+
+---
+
+## 7. AI Deving Autopilot 🟣 Full Suite
+
+Arm the autopilot to deploy from your saved presets automatically, triggered by real-time Twitter/X signals or a watched top dev deploying. In semi-manual mode it surfaces the relevant tweet for one-click deploy; in full autopilot it fires on its own.
+
+**Endpoint:** `POST /api/deving/arm`
+
+```bash
+curl -X POST http://localhost:8080/api/deving/arm \
+  -H "Authorization: Bearer YOUR_LICENSE_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "mode": "autopilot",
+    "presetId": "preset_fast_entry",
+    "twitterKeywords": ["launch", "live now"],
+    "trackedDevs": ["DevWalletAddress1...", "DevWalletAddress2..."]
+  }'
+```
+
+**Response:**
+```json
+{
+  "success": true,
+  "armed": true,
+  "mode": "autopilot",
+  "watching": { "keywords": 2, "devs": 2 },
+  "error": ""
+}
+```
+
+**Parameters:**
+| Field | Type | Description |
+|-------|------|-------------|
+| `mode` | string | `semi` (one-click confirm) or `autopilot` (auto-deploy) |
+| `presetId` | string | Saved snipe preset to fire with |
+| `twitterKeywords` | []string | X/Twitter keywords that trigger a deploy |
+| `trackedDevs` | []string | Dev wallets to mirror on deploy |
+
+---
+
+## 8. Token Creator 🟣 Full Suite
+
+Create and launch a pump.fun token with full metadata in a single call.
+
+**Endpoint:** `POST /api/token/create`
+
+```bash
+curl -X POST http://localhost:8080/api/token/create \
+  -H "Authorization: Bearer YOUR_LICENSE_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "name": "My Token",
+    "symbol": "MYTKN",
+    "description": "Launched with PumpFun Sniper Bot",
+    "imageUrl": "https://.../logo.png",
+    "devBuySOL": 0.5
+  }'
+```
+
+**Response:**
+```json
+{
+  "success": true,
+  "tokenId": "NewTokenMintAddress...",
+  "signature": "5KtP...txhash",
+  "error": ""
+}
+```
+
+**Parameters:**
+| Field | Type | Description |
+|-------|------|-------------|
+| `name` | string | Token name |
+| `symbol` | string | Token ticker |
+| `description` | string | Token description / metadata |
+| `imageUrl` | string | Token image URL |
+| `devBuySOL` | float64 | Initial dev buy in SOL at launch |
 
 ---
 
