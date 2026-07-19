@@ -8,8 +8,8 @@
 [![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)](https://go.dev)
 [![License](https://img.shields.io/badge/License-Commercial-red?style=for-the-badge)]()
 
-[![Core](https://img.shields.io/badge/Core-9_SOL-58C88D?style=for-the-badge&logo=solana&logoColor=white)](https://memesnipe.fun)
-[![Full Suite](https://img.shields.io/badge/Full_Suite-15_SOL-9945FF?style=for-the-badge&logo=solana&logoColor=white)](https://memesnipe.fun)
+[![Core](https://img.shields.io/badge/Core-30_SOL-58C88D?style=for-the-badge&logo=solana&logoColor=white)](https://memesnipe.fun)
+[![Full Suite](https://img.shields.io/badge/Full_Suite-40_SOL-9945FF?style=for-the-badge&logo=solana&logoColor=white)](https://memesnipe.fun)
 
 [Get Access](https://memesnipe.fun) · [Pricing](#pricing) · [Features](#features) · [Demo](#demo) · [Architecture](#architecture)
 
@@ -29,7 +29,7 @@ Built for traders who need sub-second execution on memecoin launches, shipped as
 
 Two one-time licenses. Pay once in **SOL**, own the source forever — no subscriptions, no rebilling.
 
-| | **Core** · 9 SOL | **Full Suite** · 15 SOL |
+| | **Core** · 30 SOL | **Full Suite** · 40 SOL |
 |---|:---:|:---:|
 | Full source code + lifetime license | ✅ | ✅ |
 | Multi-wallet coordinated sniping | ✅ | ✅ |
@@ -47,9 +47,9 @@ Two one-time licenses. Pay once in **SOL**, own the source forever — no subscr
 
 <div align="center">
 
-[![Buy Core — 9 SOL](https://img.shields.io/badge/Buy_Core-9_SOL-58C88D?style=for-the-badge&logo=solana&logoColor=white)](https://memesnipe.fun)
+[![Buy Core — 30 SOL](https://img.shields.io/badge/Buy_Core-30_SOL-58C88D?style=for-the-badge&logo=solana&logoColor=white)](https://memesnipe.fun)
 &nbsp;
-[![Buy Full Suite — 15 SOL](https://img.shields.io/badge/Buy_Full_Suite-15_SOL-9945FF?style=for-the-badge&logo=solana&logoColor=white)](https://memesnipe.fun)
+[![Buy Full Suite — 40 SOL](https://img.shields.io/badge/Buy_Full_Suite-40_SOL-9945FF?style=for-the-badge&logo=solana&logoColor=white)](https://memesnipe.fun)
 
 **Pay with 300+ cryptocurrencies · Instant delivery · 24/7 support on Telegram**
 
@@ -69,7 +69,7 @@ Two one-time licenses. Pay once in **SOL**, own the source forever — no subscr
 - **"Eyes on Axiom" Overlay** — Compact side-by-side layout with real-time wallet/token visibility and one-click CA copy.
 - **REST API Control** — Full HTTP API for programmatic control. Integrate with your own dashboard or scripts.
 
-**Full Suite only (15 SOL):**
+**Full Suite only (40 SOL):**
 
 - **Twitter / X Parsing** — Live feed parsing surfaces the relevant tweet the instant news breaks — never miss the narrative.
 - **Top-Dev Tracking** — Follow and mirror your favorite creators automatically the moment they deploy.
@@ -226,7 +226,7 @@ type wsHub struct {
 PumpFun AI Dev Sniper ships as the **full source code** with a lifetime license.
 
 ### Quick Start
-1. **Pick your tier** and pay at [memesnipe.fun](https://memesnipe.fun) — 9 SOL (Core) or 15 SOL (Full Suite)
+1. **Pick your tier** and pay at [memesnipe.fun](https://memesnipe.fun) — 30 SOL (Core) or 40 SOL (Full Suite)
 2. Message **[@nik0dev](https://t.me/nik0dev)** on Telegram with your order ID
 3. Receive your private GitHub invite (or the source files directly)
 4. Self-host your instance, configure wallets and presets, and start sniping
@@ -256,10 +256,10 @@ PumpFun AI Dev Sniper ships as the **full source code** with a lifetime license.
 Yes. Both tiers include the complete source under a commercial lifetime license. This public repo holds documentation, architecture, and code previews; purchasing grants access to the private source repository.
 
 **What's the difference between Core and Full Suite?**
-Core (9 SOL) is the complete sniping engine — Jito bundles, auto take-profit, WebSocket monitoring, volume bot, and the Axiom overlay. Full Suite (15 SOL) adds Twitter parsing, top-dev tracking, the AI deving autopilot, the Token Creator, and priority support.
+Core (30 SOL) is the complete sniping engine — Jito bundles, auto take-profit, WebSocket monitoring, volume bot, and the Axiom overlay. Full Suite (40 SOL) adds Twitter parsing, top-dev tracking, the AI deving autopilot, the Token Creator, and priority support.
 
 **Can I upgrade later?**
-Yes — pay the 6 SOL difference and message [@nik0dev](https://t.me/nik0dev) with your order ID to unlock the Full Suite.
+Yes — pay the 10 SOL difference and message [@nik0dev](https://t.me/nik0dev) with your order ID to unlock the Full Suite.
 
 **What chains are supported?**
 Solana only, specifically optimized for pump.fun token launches.
@@ -275,9 +275,9 @@ Sub-200ms from token detection to buy execution with Jito bundles. Under 150ms w
 
 ### Ready to snipe pump.fun launches?
 
-[![Buy Core — 9 SOL](https://img.shields.io/badge/Buy_Core-9_SOL-58C88D?style=for-the-badge&logo=solana&logoColor=white)](https://memesnipe.fun)
+[![Buy Core — 30 SOL](https://img.shields.io/badge/Buy_Core-30_SOL-58C88D?style=for-the-badge&logo=solana&logoColor=white)](https://memesnipe.fun)
 &nbsp;
-[![Buy Full Suite — 15 SOL](https://img.shields.io/badge/Buy_Full_Suite-15_SOL-9945FF?style=for-the-badge&logo=solana&logoColor=white)](https://memesnipe.fun)
+[![Buy Full Suite — 40 SOL](https://img.shields.io/badge/Buy_Full_Suite-40_SOL-9945FF?style=for-the-badge&logo=solana&logoColor=white)](https://memesnipe.fun)
 
 **Pay with 300+ cryptocurrencies · Instant delivery · 24/7 support on Telegram**
 

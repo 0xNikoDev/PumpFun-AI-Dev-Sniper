@@ -5,7 +5,7 @@ Full API reference with request/response examples for all endpoints.
 > All endpoints require `Authorization: Bearer <your-license-key>` header.
 > Base URL: `http://your-server:8080`
 
-**Tier legend:** 🟢 **Core** (9 SOL) · 🟣 **Full Suite** (15 SOL, includes everything in Core)
+**Tier legend:** 🟢 **Core** (30 SOL) · 🟣 **Full Suite** (40 SOL, includes everything in Core)
 
 | # | Feature | Tier |
 |---|---------|------|
